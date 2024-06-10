@@ -1,3 +1,1 @@
----
-layout: redirect
-redirect: /index.html
+# kjheve.github.io
