@@ -1,0 +1,187 @@
+/* 공통 박스 */
+.white_box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 2px 1px #eee;
+  width: 90vw;
+  margin: 20px auto 0 auto;
+  height: 100%;
+}
+
+/* === 모달창 === */
+.modal-body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.modal_img {
+  width: 96px;
+  height: 96px;
+}
+
+/* === 프로필 === */
+
+.profile {
+  display: flex;
+}
+
+.profile_base {
+  display: flex;
+  width: 70vw;
+  min-width: 600px;
+  border-right: 1px solid #eee;
+}
+
+.profile_base_img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 0;
+}
+
+.profile_base_name {
+  margin-left: 35px;
+}
+
+.contact_btn {
+  margin-top: 15px;
+}
+
+.profile_detail {
+  width: 30vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-left: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.contact_btn {
+  margin-top: 10px;
+}
+
+/* === 프로필 종료 === */
+
+/* === NAV 메뉴 === */
+nav {
+  position: sticky;
+  z-index: 5;
+  top: 10px;
+  width: 400px;
+  display: block;
+  margin: auto;
+}
+
+.nav_wrap {
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_wrap li {
+  padding: 20px;
+  background-color: rgba(13, 110, 253, 0.8);
+  color: #fff;
+}
+
+.nav_wrap li:hover {
+  background-color: rgb(13, 110, 253);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* === nav 종료 === */
+
+/* === skills === */
+.accordion-button:not(.collapsed) {
+  background-color: #0d6efd !important;
+  ;
+  color: #fff !important;
+  ;
+}
+
+.img_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img_wrap img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+/* === skills 종료 === */
+
+/* === portfolio === */
+#carouselExampleCaptions {
+  margin: auto;
+  width: 60vw;
+}
+
+.overlay_btn {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+}
+
+/* === portfolio 종료 === */
+
+
+/* 반응형 */
+/* 모바일 (0px ~ 767px) */
+@media (max-width: 960px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile_base {
+    min-width: 100%;
+    border-right: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile_base_name {
+    margin-left: 25px;
+  }
+
+  .profile_detail {
+    margin-top: 30px;
+    margin-left: 0;
+    width: 100%;
+    gap: 10px;
+    min-width: auto;
+  }
+
+  .nav_wrap li {
+    width: 100%;
+    text-align: center;
+  }
+
+  #carouselExampleCaptions {
+    width: 100%;
+  }
+
+  .overlay_btn {
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 450px) {
+  .profile_base_img {
+    width: 150px;
+    height: 150px;
+  }
+}
