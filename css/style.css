@@ -25,6 +25,19 @@
   margin-top: 3px;
 }
 
+.profile, nav, .skills, .resume, .portfolio, footer {
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.profile_detail span, th, td, .resume_cell, #contactModal, #videoModal {
+  font-family: "Orbit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
 /* === 모달창 === */
 .modal-body {
@@ -149,6 +162,9 @@ nav {
   border-radius: 5px;
   position: relative;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .row .resume_cell:nth-child(1)::after {
