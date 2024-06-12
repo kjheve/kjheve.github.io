@@ -234,6 +234,7 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  font-size: 20px;
 }
 .footer p {
   font-size: 12px;
@@ -299,6 +300,10 @@ footer {
   nav {
     margin: auto;
   }
+
+  .footer div {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -308,5 +313,8 @@ footer {
   }
   .overlay_btn {
     top : 26%;
+  }
+  .footer div {
+    font-size: 14px;
   }
 }
