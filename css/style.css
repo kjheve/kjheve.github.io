@@ -207,6 +207,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  z-index: 3;
 }
 .overlay_btn * {
   margin: 0 5px;
@@ -262,8 +264,8 @@ footer {
 
   .overlay_btn {
     width: 100%;
-    text-align: center;
     left: 50%;
+    top: 10%;
     transform: translateX(-50%);
   }
 
@@ -290,6 +292,6 @@ footer {
     height: 150px;
   }
   .overlay_btn {
-    top : 25%;
+    top : 26%;
   }
 }
